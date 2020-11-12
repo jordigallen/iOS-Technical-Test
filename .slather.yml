@@ -1,0 +1,10 @@
+  
+coverage_service: coveralls
+xcodeproj: ios-Technical-Test.xcodeproj
+workspace: ios-Technical-Test.xcworkspace
+scheme: ios-Technical-Test
+source_directory: ios-Technical-Test/*
+ignore:
+  - ios-Technical-TestTests/*
+  - ios-Technical-TestUITests/*
+  - Pods/*
