@@ -8,10 +8,12 @@ use_frameworks!
 inhibit_all_warnings!
 
 $alamofire_version = '4.9.1'
+$swiftgen_version = '6.1.0'
 
 def app_pods
   pod 'Alamofire', $alamofire_version
-4end
+  pod 'SwiftGen', $swiftgen_version
+end
 
   # Pods for ios-Technical-Test
 target 'ios-Technical-Test' do
