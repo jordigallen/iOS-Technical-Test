@@ -12,7 +12,7 @@ Install _fastlane_ using
 ```
 [sudo] gem install fastlane -NV
 ```
-or alternatively using `brew cask install fastlane`
+or alternatively using `brew install fastlane`
 
 # Available Actions
 ### unit_test
@@ -21,21 +21,21 @@ fastlane unit_test
 ```
 Runs app's unit tests in the specified device.
 
-Usage example: fastlane unit_test device:'iPhone 8' ios_version:'12.4'
+Usage example: fastlane unit_test device:'iPhone 11' ios_version:'12.4'
 ### ui_test
 ```
 fastlane ui_test
 ```
 Runs app's UI tests in the specified device.
 
-Usage example: fastlane ui_test device:'iPhone 8' ios_version:'12.4'
+Usage example: fastlane ui_test device:'iPhone 11' ios_version:'12.4'
 ### full_test
 ```
 fastlane full_test
 ```
 Runs app's full test suite in the specified device.
 
-Usage example: fastlane full_test device:'iPhone 8' ios_version:'12.4'
+Usage example: fastlane full_test device:'iPhone 11' ios_version:'12.4'
 ### compile_app
 ```
 fastlane compile_app
