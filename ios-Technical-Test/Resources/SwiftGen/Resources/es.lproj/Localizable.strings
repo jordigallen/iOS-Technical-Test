@@ -1,0 +1,16 @@
+// MARK: Shared
+"Shared.accept" = "Aceptar";
+"Shared.empty" = "";
+
+// MARK: List
+"ios-Technical-Test.ListViewController.navigation.title" = "MARVEL";
+"ios-Technical-Test.ListViewController.searching.title" = "Estamos descargando la lista\n\n¿Estas preparado para frikear ?";
+"ios-Technical-Test.ListViewController.searching.resulNotFound" = "You haven't found what you were looking for, man!\n\nBad luck!";
+
+// MARK: Network
+"ios-Technical-Test.ErrorNetwork.Connection.title" = "Network Error";
+"ios-Technical-Test.ErrorNetwork.Connection.description" = "When the device has a network again, the app will update automatically 🔌";
+"ios-Technical-Test.ErrorNetwork.Maintenance.title" = "Maintenance Server";
+"ios-Technical-Test.ErrorNetwork.Maintenance.description" = "Estamos en mantenimiento, espere que se recupere el servidor y se le conectara automaticamente 🛠";
+"ios-Technical-Test.ErrorNetwork.Generic.title" = "Oops!";
+"ios-Technical-Test.ErrorNetwork.Generic.description" = "Parece que hemos tenido un problema con los datos de respuesta, vuelve a intentarlo 🙂!";

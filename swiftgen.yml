@@ -1,25 +1,25 @@
 strings:
-  inputs: Marvel/Resources/SwiftGen/Resources/es.lproj/Localizable.strings
+  inputs: ios-Technical-Test/Resources/SwiftGen/Resources/es.lproj/Localizable.strings
   outputs:
     templateName: structured-swift4
-    output: Marvel/Resources/SwiftGen/Generated/strings.swift
+    output: ios-Technical-Test/Resources/SwiftGen/Generated/strings.swift
 colors:
-  inputs: Marvel/Resources/SwiftGen/Resources/Colors.json
+  inputs: ios-Technical-Test/Resources/SwiftGen/Resources/Colors.json
   outputs:
     templateName: swift4
-    output: Marvel/Resources/SwiftGen/Generated/colors.swift
+    output: ios-Technical-Test/Resources/SwiftGen/Generated/colors.swift
 ib:
-  inputs: Marvel/Resources/Scenes
+  inputs: ios-Technical-Test/Resources/Scenes
   outputs:
     templateName: scenes-swift4
-    output:  Marvel/Resources/SwiftGen/Generated/Scenes.swift
+    output:  ios-Technical-Test/Resources/SwiftGen/Generated/Scenes.swift
 xcassets:
-  inputs: Marvel/Resources/SwiftGen/Resources/Assets.xcassets
+  inputs: ios-Technical-Test/Resources/SwiftGen/Resources/Assets.xcassets
   outputs:
     templateName: swift4
-    output:  Marvel/Resources/SwiftGen/Generated/images.swift
+    output:  ios-Technical-Test/Resources/SwiftGen/Generated/images.swift
 fonts:
-  inputs: Marvel/Resources/Fonts
+  inputs: ios-Technical-Test/Resources/Fonts
   outputs:
     templateName: swift4
-    output:  Marvel/Resources/SwiftGen/Generated/Fonts.swift
+    output:  ios-Technical-Test/Resources/SwiftGen/Generated/Fonts.swift
