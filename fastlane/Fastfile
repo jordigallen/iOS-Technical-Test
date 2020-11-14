@@ -8,7 +8,7 @@ default_platform(:ios)
 ##############
 
 desc "Runs app's unit tests in the specified device."
-desc "Usage example: fastlane unit_test device:'iPhone 11' ios_version:'14.0'"
+desc "Usage example: fastlane unit_test device:'iPhone 11' ios_version:'12.4'"
 lane :unit_test do |options| 
 	raise "Missing 'device' parameter. Usage: fastlane unit_test device:DEVICE ios_version:IOS_VERSION" unless options[:device]
 	raise "Missing 'ios_version' parameter. Usage: fastlane unit_test device:DEVICE ios_version:IOS_VERSION" unless options[:ios_version]
@@ -23,7 +23,7 @@ lane :unit_test do |options|
 end
 
 desc "Runs app's UI tests in the specified device."
-desc "Usage example: fastlane ui_test device:'iPhone 11' ios_version:'14.0'"
+desc "Usage example: fastlane ui_test device:'iPhone 11' ios_version:'12.4'"
 lane :ui_test do |options| 
 	raise "Missing 'device' parameter. Usage: fastlane ui_test device:DEVICE ios_version:IOS_VERSION" unless options[:device]
 	raise "Missing 'ios_version' parameter. Usage: fastlane ui_test device:DEVICE ios_version:IOS_VERSION" unless options[:ios_version]
@@ -38,7 +38,7 @@ lane :ui_test do |options|
 end
 
 desc "Runs app's full test suite in the specified device."
-desc "Usage example: fastlane full_test device:'iPhone 11' ios_version:'14.0'"
+desc "Usage example: fastlane full_test device:'iPhone 11' ios_version:'12.4'"
 lane :full_test do |options| 
 	raise "Missing 'device' parameter. Usage: fastlane full_test device:DEVICE ios_version:IOS_VERSION" unless options[:device]
 	raise "Missing 'ios_version' parameter. Usage: fastlane full_test device:DEVICE ios_version:IOS_VERSION" unless options[:ios_version]
@@ -58,7 +58,7 @@ end
 
 desc "Builds the app for the specified iOS version."
 desc "This lane is to make sure that the app builds correctly before running any test, thus catching compilation errors early."
-desc "Usage example: fastlane compile_app ios_version:'14.0'"
+desc "Usage example: fastlane compile_app ios_version:'12.4'"
 lane :compile_app do |options|
 	raise "Missing 'ios_version' parameter. Usage: fastlane compile_app ios_version:IOS_VERSION" unless options[:ios_version]
 	ios_version = options[:ios_version]

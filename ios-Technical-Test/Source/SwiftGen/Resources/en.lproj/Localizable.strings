@@ -1,0 +1,16 @@
+// MARK: Shared
+"Shared.accept" = "Aceptar";
+"Shared.empty" = "";
+
+// MARK: List
+"marvel.ListViewController.navigation.title" = " in Wallapop";
+"marvel.ListViewController.searching.title" = "We are downloading the list\n\nAre you ready to freak?";
+"marvel.ListViewController.searching.resulNotFound" = "You haven't found what you were looking for, man!\n\nBad luck!";
+
+// MARK: Network
+"marvel.ErrorNetwork.Connection.title" = "Network Error";
+"marvel.ErrorNetwork.Connection.description" = "When the device has a network again, the app will update automatically 🔌";
+"marvel.ErrorNetwork.Maintenance.title" = "Maintenance Server";
+"marvel.ErrorNetwork.Maintenance.description" = "We are undergoing maintenance, wait for the server to recover and it will connect automatically 🛠";
+"marvel.ErrorNetwork.Generic.title" = "Oops!";
+"marvel.ErrorNetwork.Generic.description" = "We seem to have had a problem with the response data, please try again 🙂!";
