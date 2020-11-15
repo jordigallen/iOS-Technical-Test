@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dSH-2H-7EE">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,20 +13,20 @@
             <objects>
                 <viewController storyboardIdentifier="ListViewController" id="2C8-aa-OVG" customClass="ListViewController" customModule="ios_Technical_Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KRv-Dn-yIq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="165" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JFf-wn-J7o">
-                                <rect key="frame" x="0.0" y="147" width="320" height="421"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HeroCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeroCell" rowHeight="165" id="hjm-Et-NrZ" customClass="HeroCell" customModule="ios_Technical_Test" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="165"/>
+                                        <rect key="frame" x="0.0" y="28" width="428" height="165"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hjm-Et-NrZ" id="tDw-Xh-g64">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="165"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" red="0.6866075811311636" green="1" blue="0.85128943979158223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.91061954013995572" green="1" blue="0.94549070846439631" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -35,43 +35,22 @@
                                     <outlet property="delegate" destination="2C8-aa-OVG" id="trr-Mh-86X"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLW-Cl-a7y">
-                                <rect key="frame" x="0.0" y="44" width="320" height="103"/>
-                                <subviews>
-                                    <searchBar contentMode="redraw" placeholder="Type in to search..." showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KUL-eD-sJ9">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <scopeButtonTitles>
-                                            <string>Heroes</string>
-                                            <string>Comics</string>
-                                            <string>Creators</string>
-                                        </scopeButtonTitles>
-                                        <connections>
-                                            <outlet property="delegate" destination="2C8-aa-OVG" id="RUL-7w-ma6"/>
-                                        </connections>
-                                    </searchBar>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="KUL-eD-sJ9" firstAttribute="top" secondItem="rLW-Cl-a7y" secondAttribute="top" id="020-KL-oc8"/>
-                                    <constraint firstAttribute="trailing" secondItem="KUL-eD-sJ9" secondAttribute="trailing" id="5Ze-WO-CUh"/>
-                                    <constraint firstItem="KUL-eD-sJ9" firstAttribute="height" secondItem="rLW-Cl-a7y" secondAttribute="height" id="Cwo-6H-y8p"/>
-                                    <constraint firstItem="KUL-eD-sJ9" firstAttribute="leading" secondItem="rLW-Cl-a7y" secondAttribute="leading" id="z4c-mN-AfZ"/>
-                                </constraints>
-                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="BQR-Nn-cKT">
+                                <rect key="frame" x="0.0" y="441" width="428" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.7625183405" green="1" blue="0.91423688660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="v2g-om-bxg"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="rLW-Cl-a7y" secondAttribute="trailing" id="CRC-LR-0VR"/>
-                            <constraint firstItem="rLW-Cl-a7y" firstAttribute="top" secondItem="KRv-Dn-yIq" secondAttribute="top" constant="44" id="VR1-Ad-cdy"/>
-                            <constraint firstItem="JFf-wn-J7o" firstAttribute="leading" secondItem="KRv-Dn-yIq" secondAttribute="leading" id="Xa2-z7-0cN"/>
-                            <constraint firstItem="JFf-wn-J7o" firstAttribute="top" secondItem="rLW-Cl-a7y" secondAttribute="bottom" id="coq-di-JoI"/>
-                            <constraint firstItem="JFf-wn-J7o" firstAttribute="bottom" secondItem="KRv-Dn-yIq" secondAttribute="bottom" id="h8i-Gh-pWt"/>
-                            <constraint firstItem="JFf-wn-J7o" firstAttribute="trailing" secondItem="KRv-Dn-yIq" secondAttribute="trailing" id="jD2-lF-Dig"/>
-                            <constraint firstItem="rLW-Cl-a7y" firstAttribute="leading" secondItem="KRv-Dn-yIq" secondAttribute="leading" id="ti7-yI-zVP"/>
+                            <constraint firstItem="JFf-wn-J7o" firstAttribute="trailing" secondItem="KRv-Dn-yIq" secondAttribute="trailing" id="69G-3y-IVf"/>
+                            <constraint firstItem="BQR-Nn-cKT" firstAttribute="centerY" secondItem="JFf-wn-J7o" secondAttribute="centerY" id="J4E-Px-Ze9"/>
+                            <constraint firstItem="BQR-Nn-cKT" firstAttribute="centerX" secondItem="JFf-wn-J7o" secondAttribute="centerX" id="N29-tU-lZn"/>
+                            <constraint firstItem="JFf-wn-J7o" firstAttribute="top" secondItem="KRv-Dn-yIq" secondAttribute="top" id="QqL-ai-gcw"/>
+                            <constraint firstItem="JFf-wn-J7o" firstAttribute="leading" secondItem="KRv-Dn-yIq" secondAttribute="leading" id="q9e-4z-C2S"/>
+                            <constraint firstItem="JFf-wn-J7o" firstAttribute="bottom" secondItem="KRv-Dn-yIq" secondAttribute="bottom" id="zll-dT-ZJb"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="BV9-qO-PBo" appends="YES" id="AA3-1g-d8X"/>
@@ -79,16 +58,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="8mz-D6-qVe"/>
                     <connections>
-                        <outlet property="searchBar" destination="KUL-eD-sJ9" id="5UG-vo-Krd"/>
-                        <outlet property="tableView" destination="JFf-wn-J7o" id="Bwh-tS-CJv"/>
+                        <outlet property="activityIndicator" destination="BQR-Nn-cKT" id="6mK-4E-Tth"/>
+                        <outlet property="tableView" destination="JFf-wn-J7o" id="MW1-lO-ZRg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T96-gg-KTF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer cancelsTouchesInView="NO" id="BV9-qO-PBo">
-                    <connections>
-                        <action selector="dismissKeyboard" destination="2C8-aa-OVG" id="Lh2-lC-JRe"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer cancelsTouchesInView="NO" id="BV9-qO-PBo"/>
             </objects>
             <point key="canvasLocation" x="2313.75" y="-44.366197183098592"/>
         </scene>
@@ -98,7 +73,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dSH-2H-7EE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Cm-ek-1Cg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

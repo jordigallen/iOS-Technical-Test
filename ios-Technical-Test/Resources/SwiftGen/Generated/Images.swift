@@ -20,6 +20,8 @@
 internal enum Asset {
   internal static let accentColor = ColorAsset(name: "AccentColor")
   internal static let launchScreenIcon = ImageAsset(name: "launchScreenIcon")
+  internal static let noTVShowsFoundedIcon = ImageAsset(name: "noTVShowsFoundedIcon")
+  internal static let placeholderTVShowIcon = ImageAsset(name: "placeholderTVShowIcon")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
