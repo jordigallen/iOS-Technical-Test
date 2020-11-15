@@ -46,6 +46,17 @@ extension ListViewController: UITableViewDataSource {
     }
 }
 
+extension ListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let imagedownLoaded: UIImageView = UIImageView()
+        let tvShow = self.tvShows[indexPath.row]
+        guard let image = tvShow.image?.path, let title = tvShow.name, let gender = tvShow.type, let summary = tvShow.summary, let rating = tvShow.rating else { return }
+        imagedownLoaded.sd_setImage(with: URL(string: image), placeholderImage: Asset.placeholderTVShowIcon.image)
+        guard let viewController = Router.getDetailViewController(imagedownLoaded, title: title, gender: gender, sinopsis: summary, puntuation: rating.ratingAverage) else { return }
+        self.present(viewController, animated: true)
+    }
+}
+
 extension ListViewController: UserView {
     func startLoading() {
         self.activityIndicator?.startAnimating()
