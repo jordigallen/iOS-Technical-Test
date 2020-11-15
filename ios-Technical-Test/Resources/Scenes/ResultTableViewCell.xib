@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="HeroCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultTableViewCell" rowHeight="246" id="KGk-i7-Jjw" customClass="ResultTableViewCell" customModule="ios_Technical_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="223"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="223"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXA-Zq-Qsy">
+                        <rect key="frame" x="20" y="10" width="366" height="200"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vdt-ku-TVz">
+                                <rect key="frame" x="0.0" y="5" width="366" height="190"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyListImage" translatesAutoresizingMaskIntoConstraints="NO" id="TKH-lX-UT7">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="168"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaF-df-1hy">
+                                        <rect key="frame" x="0.0" y="169" width="366" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Fjh-aJ-n6j"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="linkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76251834046234701" green="1" blue="0.91423688662446057" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vdt-ku-TVz" firstAttribute="top" secondItem="UXA-Zq-Qsy" secondAttribute="top" constant="5" id="47n-uB-sgM"/>
+                            <constraint firstAttribute="trailing" secondItem="Vdt-ku-TVz" secondAttribute="trailing" id="SeT-iX-vXe"/>
+                            <constraint firstItem="Vdt-ku-TVz" firstAttribute="leading" secondItem="UXA-Zq-Qsy" secondAttribute="leading" id="SgW-uY-9BL"/>
+                            <constraint firstAttribute="bottom" secondItem="Vdt-ku-TVz" secondAttribute="bottom" constant="5" id="UCL-qI-VMN"/>
+                            <constraint firstAttribute="height" constant="200" id="gre-Zp-iv8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="UXA-Zq-Qsy" secondAttribute="bottom" constant="10" id="0km-Nk-2Tm"/>
+                    <constraint firstItem="UXA-Zq-Qsy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="33x-oR-DyA"/>
+                    <constraint firstItem="UXA-Zq-Qsy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Isq-AJ-A1R"/>
+                    <constraint firstAttribute="trailing" secondItem="UXA-Zq-Qsy" secondAttribute="trailing" constant="20" id="b1t-7Y-Tvs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="iaF-df-1hy" id="4HQ-Pd-tC7"/>
+                <outlet property="tvShowImage" destination="TKH-lX-UT7" id="Tay-G2-Xd1"/>
+                <outlet property="viewCell" destination="UXA-Zq-Qsy" id="DaY-XN-zMY"/>
+            </connections>
+            <point key="canvasLocation" x="128.98550724637681" y="213.28125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="emptyListImage" width="473" height="473"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
