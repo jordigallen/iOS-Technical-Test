@@ -58,6 +58,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="8mz-D6-qVe"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="BQR-Nn-cKT" id="6mK-4E-Tth"/>
                         <outlet property="tableView" destination="JFf-wn-J7o" id="MW1-lO-ZRg"/>
                     </connections>
                 </viewController>

@@ -24,9 +24,9 @@ class TVShowResultCollectionCelTVShowTests: XCTestCase {
         super.tearDown()
     }
 
-    func testViewLoadsSuccessfully_withHeroModel() {
+    func testViewLoadsSuccessfully_withTVShowModel() {
         // Arrange
-        let tvShow = TVShowModel.generateTVShow(index: 1)
+        let tvShow = TVShowModel.generateTVShow(index: 0)
 
         // Act
         cell.configureTVShow(with: tvShow)
