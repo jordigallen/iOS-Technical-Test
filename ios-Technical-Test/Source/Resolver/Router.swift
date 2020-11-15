@@ -27,4 +27,22 @@ extension Router {
         viewController?.modalPresentationStyle = .overFullScreen
         return viewController
     }
+
+    final class func getDetailViewController(_ image: UIImageView?, title: String?, gender: String?, sinopsis: String?, puntuation: Double?) -> UINavigationController? {
+        let container = SwinjectStoryboardExtension.container
+        let bundle = Bundle(for: Router.self)
+        let storyBoard = SwinjectStoryboard.create(name: StoryboardScene.Detail.storyboardName, bundle: bundle, container: container)
+        let navigationController = storyBoard.instantiateInitialViewController() as? UINavigationController
+        if let viewController = storyBoard.instantiateViewController(withIdentifier: StoryboardScene.Detail.detailListViewController.identifier) as? DetailListViewController {
+            viewController.imageDetail = image
+            viewController.titleDetail = title
+            viewController.genderDetail = gender
+            viewController.sinopsisDetail = sinopsis
+            viewController.puntuation = puntuation
+            navigationController?.addChild(viewController)
+            viewController.modalPresentationStyle = .overFullScreen
+            return navigationController
+        }
+        return UINavigationController()
+    }
 }

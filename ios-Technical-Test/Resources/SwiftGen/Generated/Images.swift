@@ -19,6 +19,7 @@
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
   internal static let accentColor = ColorAsset(name: "AccentColor")
+  internal static let closeGray = ImageAsset(name: "closeGray")
   internal static let launchScreenIcon = ImageAsset(name: "launchScreenIcon")
   internal static let noTVShowsFoundedIcon = ImageAsset(name: "noTVShowsFoundedIcon")
   internal static let placeholderTVShowIcon = ImageAsset(name: "placeholderTVShowIcon")
