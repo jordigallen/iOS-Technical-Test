@@ -8,10 +8,23 @@ use_frameworks!
 inhibit_all_warnings!
 
 $alamofire_version = '4.9.1'
+$nimble_version = '8.0.4'
+$promise_kit_version = '6.12.0'
+$sdwebimage_version = '5.3.1'
+$swiftgen_version = '6.1.0'
+$snapshotTesting_version = '1.8.2'
+$swinject_version = '2.6.0'
+$swinjectStoryboard_version = '2.2.0'
 
 def app_pods
   pod 'Alamofire', $alamofire_version
-4end
+  pod 'SDWebImage', $sdwebimage_version
+  pod 'SwiftGen', $swiftgen_version
+  pod 'Swinject', $swinject_version
+  pod 'PromiseKit', $promise_kit_version
+  pod 'Swinject', $swinject_version
+  pod 'SwinjectStoryboard', $swinjectStoryboard_version
+end
 
   # Pods for ios-Technical-Test
 target 'ios-Technical-Test' do
@@ -21,6 +34,8 @@ end
 target 'ios-Technical-TestTests' do
   inherit! :search_paths
   app_pods
+  pod 'Nimble', $nimble_version
+  pod 'SnapshotTesting', $snapshotTesting_version
 end
 
 target 'ios-Technical-TestUITests' do

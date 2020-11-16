@@ -1,0 +1,8 @@
+// MARK: Shared
+"Shared.accept" = "Aceptar";
+"Shared.empty" = "";
+
+// MARK: List
+"ios-Technical-Test.ListViewController.navigation.title" = "PromoFarma";
+"ios-Technical-Test.ListViewController.searching.title" = "Estamos descargando la lista\n\n¿Estas preparado para frikear ?";
+"ios-Technical-Test.ListViewController.searching.resulNotFound" = "You haven't found what you were looking for, man!\n\nBad luck!";

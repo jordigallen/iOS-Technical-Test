@@ -1,16 +1,55 @@
 PODS:
   - Alamofire (4.9.1)
+  - Nimble (8.0.4)
+  - PromiseKit (6.12.0):
+    - PromiseKit/CorePromise (= 6.12.0)
+    - PromiseKit/Foundation (= 6.12.0)
+    - PromiseKit/UIKit (= 6.12.0)
+  - PromiseKit/CorePromise (6.12.0)
+  - PromiseKit/Foundation (6.12.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.12.0):
+    - PromiseKit/CorePromise
+  - SDWebImage (5.3.1):
+    - SDWebImage/Core (= 5.3.1)
+  - SDWebImage/Core (5.3.1)
+  - SnapshotTesting (1.8.2)
+  - SwiftGen (6.1.0)
+  - Swinject (2.6.0)
+  - SwinjectStoryboard (2.2.0):
+    - Swinject (~> 2.6)
 
 DEPENDENCIES:
   - Alamofire (= 4.9.1)
+  - Nimble (= 8.0.4)
+  - PromiseKit (= 6.12.0)
+  - SDWebImage (= 5.3.1)
+  - SnapshotTesting (= 1.8.2)
+  - SwiftGen (= 6.1.0)
+  - Swinject (= 2.6.0)
+  - SwinjectStoryboard (= 2.2.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Nimble
+    - PromiseKit
+    - SDWebImage
+    - SnapshotTesting
+    - SwiftGen
+    - Swinject
+    - SwinjectStoryboard
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
+  PromiseKit: c06835ba442ce5454ce3cdde470232804a6e4ff8
+  SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
+  SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+  Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
+  SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
 
-PODFILE CHECKSUM: a6ee14e76bbec445f61253f514aa04a3fd8be93f
+PODFILE CHECKSUM: 1fd9846889f312b587fe12233e600498766dc771
 
 COCOAPODS: 1.9.1

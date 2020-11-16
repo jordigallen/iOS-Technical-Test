@@ -7,19 +7,19 @@ jobs:
   include:
   - stage: build
     name: "Building app"
-    script: bundle exec fastlane compile_app ios_version:'14.0'
+    script: bundle exec fastlane compile_app ios_version:'14.2'
 
   - stage: test
     name: "Running unit tests"
-    script: bundle exec fastlane unit_test device:'iPhone 11' ios_version:'14.0'
+    script: bundle exec fastlane unit_test device:'iPhone 12' ios_version:'14.2'
 
   - stage: test
     name: "Running UI tests"
-    script: bundle exec fastlane ui_test device:'iPhone 11' ios_version:'14.0'
+    script: bundle exec fastlane ui_test device:'iPhone 12' ios_version:'14.2'
 
   - stage: coverage
     name: "Running full set of tests and gathering coverage data"
-    script: bundle exec fastlane full_test device:'iPhone 11' ios_version:'14.0'
+    script: bundle exec fastlane full_test device:'iPhone 12' ios_version:'14.2'
     after_success: bundle exec slather
 
 stages:
