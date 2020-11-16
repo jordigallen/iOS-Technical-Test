@@ -20,26 +20,6 @@ internal enum L10n {
   }
 
   internal enum IosTechnicalTest {
-    internal enum ErrorNetwork {
-      internal enum Connection {
-        /// When the device has a network again, the app will update automatically 🔌
-        internal static let description = L10n.tr("Localizable", "ios-Technical-Test.ErrorNetwork.Connection.description")
-        /// Network Error
-        internal static let title = L10n.tr("Localizable", "ios-Technical-Test.ErrorNetwork.Connection.title")
-      }
-      internal enum Generic {
-        /// Parece que hemos tenido un problema con los datos de respuesta, vuelve a intentarlo 🙂!
-        internal static let description = L10n.tr("Localizable", "ios-Technical-Test.ErrorNetwork.Generic.description")
-        /// Oops!
-        internal static let title = L10n.tr("Localizable", "ios-Technical-Test.ErrorNetwork.Generic.title")
-      }
-      internal enum Maintenance {
-        /// Estamos en mantenimiento, espere que se recupere el servidor y se le conectara automaticamente 🛠
-        internal static let description = L10n.tr("Localizable", "ios-Technical-Test.ErrorNetwork.Maintenance.description")
-        /// Maintenance Server
-        internal static let title = L10n.tr("Localizable", "ios-Technical-Test.ErrorNetwork.Maintenance.title")
-      }
-    }
     internal enum ListViewController {
       internal enum Navigation {
         /// PromoFarma

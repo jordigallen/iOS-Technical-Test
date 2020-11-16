@@ -44,6 +44,15 @@ extension ListViewController: UITableViewDataSource {
         cell.configureTVShow(with: tvShows[indexPath.row])
         return cell
     }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if let lastVisibleIndexPath = tableView.indexPathsForVisibleRows?.last {
+            if (presenter.items - 1) == lastVisibleIndexPath.row {
+                print("[TEST] END TABLEVIEW: presenter.page = \(presenter.items - 1) : lastVisibleIndexPath = \(lastVisibleIndexPath.row) ")
+                self.presenter.fetchTVShows()
+            }
+        }
+    }
 }
 
 extension ListViewController: UITableViewDelegate {
