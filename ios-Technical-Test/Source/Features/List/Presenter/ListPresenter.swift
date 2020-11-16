@@ -12,7 +12,6 @@ protocol ListPresenterProtocol: AnyObject {
     func attachView(_ view: UserView)
     func detachView()
     var newPage: Int { get }
-    var items: Int { get }
 }
 
 protocol UserView: AnyObject {
@@ -23,12 +22,16 @@ protocol UserView: AnyObject {
 }
 
 class ListPresenter: ListPresenterProtocol {
-    
-    private var useCase: ListUseCaseProtocol?
-    private var userView: UserView?
+
+    private enum PagingConstantType: Int {
+        case onePage = 1
+        case itemsPerPage = 240
+    }
 
     var newPage = 0
-    var items = 240
+
+    private var useCase: ListUseCaseProtocol?
+    private var userView: UserView?
 
     init(useCase: ListUseCaseProtocol) {
         self.useCase = useCase
@@ -50,8 +53,7 @@ class ListPresenter: ListPresenterProtocol {
             self.userView?.finishLoading()
             if case let .success(response) = tvShows, !response.isEmpty {
                 self.userView?.setTVShows(response)
-                self.newPage += 1
-//                print("[TEST] newPage \(self.newPage)")
+                self.newPage += PagingConstantType.onePage.rawValue
             } else {
                 self.userView?.toggleTableViewBackground()
             }

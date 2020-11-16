@@ -27,11 +27,8 @@ class ResultTableViewCell: UITableViewCell {
     }
 
     @IBOutlet weak private var viewCell: UIView!
-    @IBOutlet weak private var tvShowImage: UIImageView! {
-        didSet {
-            self.tvShowImage.layer.cornerRadius = 3
-        }
-    }
+
+    @IBOutlet weak private var tvShowImage: UIImageView! 
 
     @IBOutlet private weak var nameLabel: UILabel! {
         didSet {
@@ -63,7 +60,6 @@ class ResultTableViewCell: UITableViewCell {
         self.viewCell.layer.masksToBounds = false
         self.tvShowImage.layer.cornerRadius = CGFloat(ImageView.cornerRadius)
         self.tvShowImage.clipsToBounds = true
-
     }
 
     public func configureTVShow(with tvShow: TVShowModel) {

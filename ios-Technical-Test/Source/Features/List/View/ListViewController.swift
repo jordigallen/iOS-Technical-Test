@@ -8,12 +8,20 @@
 import UIKit
 
 class ListViewController: UIViewController {
-    @IBOutlet var tableView: UITableView!
-    @IBOutlet var activityIndicator: UIActivityIndicatorView?
 
-    
-    internal var presenter: ListPresenterProtocol!
+    @IBOutlet private var tableView: UITableView!
+
+    @IBOutlet private var activityIndicator: UIActivityIndicatorView? {
+        didSet {
+            self.activityIndicator?.hidesWhenStopped = true
+        }
+    }
+
     static let cellTableId = "ResultTableViewCell"
+
+    internal var presenter: ListPresenterProtocol!
+
+    var tableViewOnBottom: Bool = false
 
     private var tvShows = [TVShowModel]() {
         didSet {
@@ -24,9 +32,7 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
-        self.activityIndicator?.hidesWhenStopped = true
         self.presenter.attachView(self)
-        self.presenter.fetchTVShows()
         self.prepareTableView()
     }
 }
@@ -42,15 +48,6 @@ extension ListViewController: UITableViewDataSource {
         cell.configureTVShow(with: tvShows[indexPath.row])
         return cell
     }
-
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if let lastVisibleIndexPath = tableView.indexPathsForVisibleRows?.last {
-            if (presenter.items - 1) == lastVisibleIndexPath.row {
-                print("[TEST] END TABLEVIEW: presenter.page = \(presenter.items - 1) : lastVisibleIndexPath = \(lastVisibleIndexPath.row) ")
-                self.presenter.fetchTVShows()
-            }
-        }
-    }
 }
 
 extension ListViewController: UITableViewDelegate {
@@ -61,6 +58,13 @@ extension ListViewController: UITableViewDelegate {
         imagedownLoaded.sd_setImage(with: URL(string: image), placeholderImage: Asset.placeholderTVShowIcon.image)
         guard let viewController = Router.getDetailViewController(imagedownLoaded, title: title, gender: gender, sinopsis: summary, puntuation: rating.ratingAverage) else { return }
         self.present(viewController, animated: true)
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.isBouncingBottom, !self.tableViewOnBottom {
+            self.tableViewOnBottom = true
+            self.presenter.fetchTVShows()
+        }
     }
 }
 
@@ -77,6 +81,7 @@ extension ListViewController: UserView {
         self.tvShows = tvShows
         self.tvShows.append(contentsOf: tvShows)
         self.tableView?.reloadData()
+        self.tableViewOnBottom = false
     }
 
     func toggleTableViewBackground() {
@@ -94,6 +99,7 @@ extension ListViewController: UserView {
 
 extension ListViewController {
     private func prepareTableView() {
+        self.presenter.fetchTVShows()
         self.toggleTableViewBackground()
         self.tableView.register(UINib.init(nibName: ListViewController.cellTableId, bundle: nil), forCellReuseIdentifier: ListViewController.cellTableId)
     }
