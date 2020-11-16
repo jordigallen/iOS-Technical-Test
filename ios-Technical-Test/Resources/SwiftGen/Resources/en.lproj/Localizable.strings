@@ -6,11 +6,3 @@
 "ios-Technical-Test.ListViewController.navigation.title" = " in PromoFarma";
 "ios-Technical-Test.ListViewController.searching.title" = "We are downloading the list\n\nAre you ready to freak?";
 "ios-Technical-Test.ListViewController.searching.resulNotFound" = "You haven't found what you were looking for, man!\n\nBad luck!";
-
-// MARK: Network
-"ios-Technical-Test.ErrorNetwork.Connection.title" = "Network Error";
-"ios-Technical-Test.ErrorNetwork.Connection.description" = "When the device has a network again, the app will update automatically 🔌";
-"ios-Technical-Test.ErrorNetwork.Maintenance.title" = "Maintenance Server";
-"ios-Technical-Test.ErrorNetwork.Maintenance.description" = "We are undergoing maintenance, wait for the server to recover and it will connect automatically 🛠";
-"ios-Technical-Test.ErrorNetwork.Generic.title" = "Oops!";
-"ios-Technical-Test.ErrorNetwork.Generic.description" = "We seem to have had a problem with the response data, please try again 🙂!";

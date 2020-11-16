@@ -11,6 +11,8 @@ protocol ListPresenterProtocol: AnyObject {
     func fetchTVShows()
     func attachView(_ view: UserView)
     func detachView()
+    var newPage: Int { get }
+    var items: Int { get }
 }
 
 protocol UserView: AnyObject {
@@ -25,9 +27,8 @@ class ListPresenter: ListPresenterProtocol {
     private var useCase: ListUseCaseProtocol?
     private var userView: UserView?
 
-    private var page = 0
-    private var newPage: Int = 240
-
+    var newPage = 0
+    var items = 240
 
     init(useCase: ListUseCaseProtocol) {
         self.useCase = useCase
@@ -44,12 +45,13 @@ class ListPresenter: ListPresenterProtocol {
 
     internal func fetchTVShows() {
         self.userView?.startLoading()
-        self.useCase?.fetchTVShows(self.page) { [weak self] tvShows  in
+        self.useCase?.fetchTVShows(self.newPage) { [weak self] tvShows  in
             guard let self = self else { return }
             self.userView?.finishLoading()
             if case let .success(response) = tvShows, !response.isEmpty {
                 self.userView?.setTVShows(response)
-                self.page += self.newPage
+                self.newPage += 1
+//                print("[TEST] newPage \(self.newPage)")
             } else {
                 self.userView?.toggleTableViewBackground()
             }

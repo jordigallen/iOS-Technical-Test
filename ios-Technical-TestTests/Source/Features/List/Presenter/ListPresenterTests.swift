@@ -12,27 +12,16 @@ import Nimble
 
 class ListHeroesPresenterTests: XCTestCase {
 
-    private let usecase = Assembler.shared.resolver.resolve(ListUseCaseProtocol.self)
+    private let presenter = Assembler.shared.resolver.resolve(ListPresenterProtocol.self)
 
     func testPresenterNotNil() {
-        expect(self.usecase).toNot(beNil())
+        expect(self.presenter).toNot(beNil())
     }
 
-    func testHasHeroes_WithOut_Search() {
+    func testHasTVShows_Success() {
         waitUntil(timeout: TestConstants.WaitTime.medium.rawValue) { (done) in
-            self.usecase?.fetchTVShows(0) { tvShows in
-                expect(tvShows).toNot(beNil())
-                done()
-            }
-        }
-    }
-
-    func testHasHeroes_With_Search() {
-        waitUntil(timeout: TestConstants.WaitTime.short.rawValue) { (done) in
-            self.usecase?.fetchTVShows(0) { tvShows in
-                expect(tvShows).toNot(beNil())
-                done()
-            }
+            self.presenter?.fetchTVShows()
+            done()
         }
     }
 }

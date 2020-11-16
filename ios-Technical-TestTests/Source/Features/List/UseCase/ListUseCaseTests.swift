@@ -19,21 +19,21 @@ class ListUseCaseTests: XCTestCase {
     }
 
 
-//    func test_Hash_TVShows_Success() {
-//        waitUntil(timeout: TestConstants.WaitTime.short.rawValue) { (done) in
-//            self.useCase?. { tvShows in
-//                expect(tvShows).toNot(beNil())
-//                done()
-//            }
-//        }
-//    }
-//
-//    func test_Hash_TVShows_Failure() {
-//        waitUntil(timeout: TestConstants.WaitTime.short.rawValue) { (done) in
-//            self.useCase?. { tvShows in
-//                expect(tvShows).toNot(beNil())
-//                done()
-//            }
-//        }
-//    }
+    func test_Hash_TVShows_Success() {
+        waitUntil(timeout: TestConstants.WaitTime.short.rawValue) { (done) in
+            self.useCase?.fetchTVShows(0) { tvShows in
+                expect(tvShows).toNot(beNil())
+                done()
+            }
+        }
+    }
+
+    func test_Hash_TVShows_Failure() {
+        waitUntil(timeout: TestConstants.WaitTime.short.rawValue) { (done) in
+            self.useCase?.fetchTVShows(-1) { tvShows in
+                expect(tvShows).toNot(beNil())
+                done()
+            }
+        }
+    }
 }
