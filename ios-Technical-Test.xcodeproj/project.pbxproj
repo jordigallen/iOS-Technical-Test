@@ -70,6 +70,7 @@
 		14AB9D6E25603FD3009F3A51 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AB9D6D25603FD3009F3A51 /* List.storyboard */; };
 		14AB9D7425603FDC009F3A51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AB9D7225603FDC009F3A51 /* LaunchScreen.storyboard */; };
 		14AB9D8125604094009F3A51 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AB9D8025604094009F3A51 /* ListViewController.swift */; };
+		14BA10C02562C7AE00B45FE2 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BA10BF2562C7AE00B45FE2 /* UIScrollView+Extension.swift */; };
 		14D373B1255D9592006DAA65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D373B0255D9592006DAA65 /* AppDelegate.swift */; };
 		14D373BA255D9593006DAA65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D373B9255D9593006DAA65 /* Assets.xcassets */; };
 		14D373C8255D9593006DAA65 /* Swinject+ListtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D373C7255D9593006DAA65 /* Swinject+ListtTests.swift */; };
@@ -160,6 +161,7 @@
 		14AB9D6D25603FD3009F3A51 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		14AB9D7325603FDC009F3A51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14AB9D8025604094009F3A51 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		14BA10BF2562C7AE00B45FE2 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
 		14D373AD255D9592006DAA65 /* ios-Technical-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-Technical-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D373B0255D9592006DAA65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14D373B9255D9593006DAA65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -548,6 +550,7 @@
 				146CE97925604B76005802FA /* Codable-Decodable+Extension.swift */,
 				146CE9E525604F36005802FA /* CoreLog+Extension.swift */,
 				146CE9F8256053BE005802FA /* Nib+Extension.swift */,
+				14BA10BF2562C7AE00B45FE2 /* UIScrollView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1123,6 +1126,7 @@
 				146CE9E625604F36005802FA /* CoreLog+Extension.swift in Sources */,
 				146CE9EB25605134005802FA /* ErrorManager.swift in Sources */,
 				14AB9D8125604094009F3A51 /* ListViewController.swift in Sources */,
+				14BA10C02562C7AE00B45FE2 /* UIScrollView+Extension.swift in Sources */,
 				14D373B1255D9592006DAA65 /* AppDelegate.swift in Sources */,
 				146CE98D25604B77005802FA /* Codable-Decodable+Extension.swift in Sources */,
 				146CE9C125604D18005802FA /* AuthConfiguration.swift in Sources */,
@@ -1326,6 +1330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW66TP47QZ;
 				INFOPLIST_FILE = "ios-Technical-Test/Info.plist";
@@ -1335,6 +1340,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.promofarma.ios-Technical-Test.jordi.ios-Technical-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1346,6 +1352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW66TP47QZ;
 				INFOPLIST_FILE = "ios-Technical-Test/Info.plist";
@@ -1355,6 +1362,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.promofarma.ios-Technical-Test.jordi.ios-Technical-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

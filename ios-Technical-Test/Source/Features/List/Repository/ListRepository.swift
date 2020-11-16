@@ -95,7 +95,7 @@ extension ListRepository {
 
     private func fetchRemoteListTVShows(_ page: Int, completion: @escaping ListResponseTypeAlias) {
 
-        let endpoint = Endpoint.Page.replacingOccurrences(of: "{page}", with: "\(page)") 
+        let endpoint = Endpoint.Page.replacingOccurrences(of: "{page}", with: "\(page)")
         let storedNumberList = self.getStoredNumberList()
         let storedList = self.getStoredListTVShows()
         self.remote.get(endpoint, parameters: nil) { [weak self] (result: Swift.Result<[TVShowModel], BaseError>) in
