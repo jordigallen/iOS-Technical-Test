@@ -8,8 +8,6 @@
 import UIKit
 
 class ListViewController: UIViewController {
-
-
     @IBOutlet var tableView: UITableView!
     @IBOutlet var activityIndicator: UIActivityIndicatorView?
 
