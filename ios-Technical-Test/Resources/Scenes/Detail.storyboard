@@ -27,8 +27,13 @@
                                 <rect key="frame" x="20" y="534" width="374" height="328"/>
                                 <subviews>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PY9-0P-83F">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="41"/>
+=======
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PY9-0P-83F">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="51"/>
+>>>>>>> Stashed changes
 =======
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PY9-0P-83F">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="51"/>
@@ -42,7 +47,11 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvk-fE-7wu">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                                                 <rect key="frame" x="0.0" y="20.5" width="374" height="20.5"/>
+=======
+                                                <rect key="frame" x="0.0" y="30.5" width="374" height="20.5"/>
+>>>>>>> Stashed changes
 =======
                                                 <rect key="frame" x="0.0" y="30.5" width="374" height="20.5"/>
 >>>>>>> Stashed changes
@@ -54,7 +63,11 @@
                                     </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="270-Lr-CJW">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                                         <rect key="frame" x="0.0" y="61" width="374" height="267"/>
+=======
+                                        <rect key="frame" x="0.0" y="71" width="374" height="257"/>
+>>>>>>> Stashed changes
 =======
                                         <rect key="frame" x="0.0" y="71" width="374" height="257"/>
 >>>>>>> Stashed changes
