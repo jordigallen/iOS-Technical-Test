@@ -1,6 +1,5 @@
 # ios-Technical-Test PromoFarma
 
-[![Build Status](https://travis-ci.com/jordigallen/ios-Technical-Test.svg?branch=develop)](https://travis-ci.com/github/jordigallen/ios-Technical-Test)
 [![OS Version: iOS 14.2](https://img.shields.io/badge/iOS-14.2-green.svg)](https://www.apple.com/es/ios/ios-14/)
 
 In this manuscript he explains how everything has been implemented, along with some additional tools and what the Challenge App for PromoFarma offers us.
