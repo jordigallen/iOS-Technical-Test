@@ -32,7 +32,7 @@ public class DetailListViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel! {
         didSet {
             self.titleLabel.text = titleDetail
-            self.titleLabel.font = FontFamily.GothamRounded.bold.font(size: 22)
+            self.titleLabel.font = FontFamily.GothamRounded.bold.font(size: 18)
             self.titleLabel.textColor = ColorName.strongGray.color
         }
     }
@@ -40,7 +40,7 @@ public class DetailListViewController: UIViewController {
     @IBOutlet weak var genderLabel: UILabel! {
         didSet {
             self.genderLabel.text = genderDetail
-            self.genderLabel.font = FontFamily.GothamRounded.light.font(size: 20)
+            self.genderLabel.font = FontFamily.GothamRounded.light.font(size: 16)
             self.genderLabel.textColor = ColorName.strongGray.color
         }
     }
@@ -52,7 +52,7 @@ public class DetailListViewController: UIViewController {
             if let attributedString = try? NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil) {
                 self.summaryUITextView.attributedText = attributedString
             }
-            self.summaryUITextView.font = FontFamily.GothamRounded.light.font(size: 17)
+            self.summaryUITextView.font = FontFamily.GothamRounded.light.font(size: 14)
             self.summaryUITextView.textColor = ColorName.strongGray.color
         }
     }
