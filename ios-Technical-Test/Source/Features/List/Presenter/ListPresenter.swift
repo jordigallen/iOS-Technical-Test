@@ -31,7 +31,7 @@ class ListPresenter: ListPresenterProtocol {
     var newPage = 0
 
     private var useCase: ListUseCaseProtocol?
-    private var userView: UserView?
+    private weak var userView: UserView?
 
     init(useCase: ListUseCaseProtocol) {
         self.useCase = useCase
