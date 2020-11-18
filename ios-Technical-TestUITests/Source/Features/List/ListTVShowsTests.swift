@@ -35,6 +35,6 @@ class ListTVShowsTests: BaseUITestCase {
         mockServer.addMockedResponse(ListStub.tvShowPage0Responses)
         let app = XCUIApplication()
         app.launch()
-        app.tables.staticTexts["Under the Dome"].tap()
+        app.tables.cells.staticTexts["Under the Dome"].tap()
     }
 }
