@@ -31,6 +31,13 @@ class ListTVShowsTests: BaseUITestCase {
         XCTAssert(tableView.cells.count == 240)
     }
 
+    func testTVSwipeUpResponse_Success() {
+        mockServer.addMockedResponse(ListStub.tvShowPage0Responses)
+        let app = XCUIApplication()
+        app.launch()
+        XCUIApplication().tables.children(matching: .cell).element(boundBy: 1).swipeUp()
+    }
+
     func testTVShowPage0Item0Response_Success() {
         mockServer.addMockedResponse(ListStub.tvShowPage0Responses)
         let app = XCUIApplication()
