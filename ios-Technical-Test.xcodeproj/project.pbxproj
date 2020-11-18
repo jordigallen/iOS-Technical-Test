@@ -21,6 +21,7 @@
 		142189B8255EC9A300C99FD0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 142189B3255EC9A300C99FD0 /* Localizable.strings */; };
 		142189B9255EC9A300C99FD0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 142189B6255EC9A300C99FD0 /* Localizable.strings */; };
 		142189BE255EC9B400C99FD0 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 142189BD255EC9B400C99FD0 /* Colors.json */; };
+		143C75EC256539BD00FE2A37 /* TVShowPage0Responses.json in Resources */ = {isa = PBXBuildFile; fileRef = 141266A825651E2600F7CFAF /* TVShowPage0Responses.json */; };
 		146CB8832561475F006BD6EC /* MockStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CB8822561475F006BD6EC /* MockStorageManager.swift */; };
 		146CB88B25614778006BD6EC /* MockRemoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CB88A25614778006BD6EC /* MockRemoteManager.swift */; };
 		146CB890256147A8006BD6EC /* TVShow+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CB88F256147A8006BD6EC /* TVShow+Mock.swift */; };
@@ -968,6 +969,7 @@
 				142189B9255EC9A300C99FD0 /* Localizable.strings in Resources */,
 				142189B8255EC9A300C99FD0 /* Localizable.strings in Resources */,
 				14AB9D5C25603EF4009F3A51 /* Gothamrnd-Light.otf in Resources */,
+				143C75EC256539BD00FE2A37 /* TVShowPage0Responses.json in Resources */,
 				14D373BA255D9593006DAA65 /* Assets.xcassets in Resources */,
 				14AB9D5B25603EF4009F3A51 /* Gothamrnd-Medium.otf in Resources */,
 				142189BE255EC9B400C99FD0 /* Colors.json in Resources */,

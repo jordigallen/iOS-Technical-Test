@@ -19,7 +19,7 @@ public enum HttpMethod {
 
 final class MockServer {
     enum Constant {
-        static let bundleIdentifier = Bundle(for: MockServer.self).bundleIdentifier ?? "com.promofarma.ios-Technical-Test"
+        static let bundleIdentifier = Bundle(for: MockServer.self).bundleIdentifier ?? "com.promofarma.ios-Technical-Test.jordi.ios-Technical-TestUITests"
     }
 
     private var server = HttpServer()
@@ -103,7 +103,7 @@ private extension MockServer {
         _ filename: String,
         route: String?
     ) -> Any? {
-        guard let fileUrl = Bundle(for: MockServer.self).url(forResource: filename, withExtension: "json"),
+        guard let fileUrl = Bundle.main.url(forResource: filename, withExtension: "json"),
             let data = try? Data(contentsOf: fileUrl, options: .uncached),
             let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers),
             var jsonObject = json as? [String: Any] else {
