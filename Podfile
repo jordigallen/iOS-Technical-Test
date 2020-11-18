@@ -41,6 +41,7 @@ end
 target 'ios-Technical-TestUITests' do
   inherit! :search_paths
   app_pods
+  pod 'Swifter', '~>1.4.7'
 end
 
 post_install do |installer|
