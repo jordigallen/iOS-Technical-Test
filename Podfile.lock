@@ -14,6 +14,7 @@ PODS:
     - SDWebImage/Core (= 5.3.1)
   - SDWebImage/Core (5.3.1)
   - SnapshotTesting (1.8.2)
+  - Swifter (1.4.7)
   - SwiftGen (6.1.0)
   - Swinject (2.6.0)
   - SwinjectStoryboard (2.2.0):
@@ -25,6 +26,7 @@ DEPENDENCIES:
   - PromiseKit (= 6.12.0)
   - SDWebImage (= 5.3.1)
   - SnapshotTesting (= 1.8.2)
+  - Swifter (~> 1.4.7)
   - SwiftGen (= 6.1.0)
   - Swinject (= 2.6.0)
   - SwinjectStoryboard (= 2.2.0)
@@ -36,6 +38,7 @@ SPEC REPOS:
     - PromiseKit
     - SDWebImage
     - SnapshotTesting
+    - Swifter
     - SwiftGen
     - Swinject
     - SwinjectStoryboard
@@ -46,10 +49,11 @@ SPEC CHECKSUMS:
   PromiseKit: c06835ba442ce5454ce3cdde470232804a6e4ff8
   SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
   SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
+  Swifter: 2327ef5d872c638aebab79646ce494af508b0c8f
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
   SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
 
-PODFILE CHECKSUM: 1fd9846889f312b587fe12233e600498766dc771
+PODFILE CHECKSUM: c278c38daa98cd35b4c83a089e2425d4c2027eaf
 
 COCOAPODS: 1.9.1

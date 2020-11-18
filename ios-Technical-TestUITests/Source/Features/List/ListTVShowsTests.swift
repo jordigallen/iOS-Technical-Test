@@ -7,17 +7,34 @@
 
 import XCTest
 
-class ListTVShowsTests: XCTestCase {
+class ListTVShowsTests: BaseUITestCase {
 
-    override func setUpWithError() throws {
-        continueAfterFailure = false
+    func testTVShowErrorResponse_Success() {
+        mockServer.addMockedResponse(ListStub.tvShowErrorEndPointResponse)
+        let app = XCUIApplication()
+        let tableView = app.tables["ResultTableViewCell"]
+        XCTAssert(tableView.cells.count == 0)
     }
 
-    override func tearDownWithError() throws {
+
+    func testTVShowEmptyResponse_Success() {
+        mockServer.addMockedResponse(ListStub.tvShowEmptyResponse)
+        let app = XCUIApplication()
+        let tableView = app.tables["ResultTableViewCell"]
+        XCTAssert(tableView.cells.count == 0)
     }
 
-    func test_OpenApp_Succes() throws {
+    func testTVShowPage0Response_Success() {
+        mockServer.addMockedResponse(ListStub.tvShowPage0Responses)
+        let app = XCUIApplication()
+        let tableView = app.tables["ResultTableViewCell"]
+        XCTAssert(tableView.cells.count == 240)
+    }
+
+    func testTVShowPage0Item0Response_Success() {
+        mockServer.addMockedResponse(ListStub.tvShowPage0Responses)
         let app = XCUIApplication()
         app.launch()
+        app.tables.staticTexts["Under the Dome"].tap()
     }
 }
