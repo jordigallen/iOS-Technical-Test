@@ -37,4 +37,6 @@ class ListTVShowsTests: BaseUITestCase {
         app.launch()
         app.tables.cells.staticTexts["Under the Dome"].tap()
     }
+
+    
 }
