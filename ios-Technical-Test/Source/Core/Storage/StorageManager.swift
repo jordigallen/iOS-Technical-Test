@@ -2,8 +2,9 @@
 //  StorageManager.swift
 //  PropertyFinder
 //
-//  Created by JORDI GALLEN on 14/11/2020.
+//  Copyright © 2021 JORDI GALLEN RENAU. All rights reserved.
 //
+
 
 import Foundation
 

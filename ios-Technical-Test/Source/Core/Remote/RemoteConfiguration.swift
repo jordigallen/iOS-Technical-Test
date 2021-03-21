@@ -2,8 +2,7 @@
 //  RemoteConfiguration.swift
 //  iosTechnicalTest
 //
-//  Created by JORDI GALLEN on 11/08/2020.
-//  Copyright © 2020 JORDI GALLEN RENAU. All rights reserved.
+//  Copyright © 2021 JORDI GALLEN RENAU. All rights reserved.
 //
 
 import Alamofire
