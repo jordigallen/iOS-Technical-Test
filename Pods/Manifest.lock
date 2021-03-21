@@ -26,14 +26,13 @@ DEPENDENCIES:
   - PromiseKit (= 6.12.0)
   - SDWebImage (= 5.3.1)
   - SnapshotTesting (= 1.8.2)
-  - Swifter (~> 1.4.7)
+  - Swifter (= 1.4.7)
   - SwiftGen (= 6.1.0)
   - Swinject (= 2.6.0)
   - SwinjectStoryboard (= 2.2.0)
 
 SPEC REPOS:
-  trunk:
-    - Alamofire
+  https://github.com/CocoaPods/Specs.git:
     - Nimble
     - PromiseKit
     - SDWebImage
@@ -42,6 +41,8 @@ SPEC REPOS:
     - SwiftGen
     - Swinject
     - SwinjectStoryboard
+  trunk:
+    - Alamofire
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
@@ -54,6 +55,6 @@ SPEC CHECKSUMS:
   Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
   SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
 
-PODFILE CHECKSUM: c278c38daa98cd35b4c83a089e2425d4c2027eaf
+PODFILE CHECKSUM: 1cf3e3067a9ae17e6d6068c2bd65d4d81dc16f1e
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.1
