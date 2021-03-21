@@ -2,8 +2,7 @@
 //  Codable+ExtensionTests.swift
 //  MarvelTests
 //
-//  Created by JORDI GALLEN on 14/08/2020.
-//  Copyright © 2020 JORDI GALLEN RENAU. All rights reserved.
+//  Copyright © 2021 JORDI GALLEN RENAU. All rights reserved.
 //
 
 import XCTest
