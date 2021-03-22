@@ -30,7 +30,7 @@ class StorageManagerTests: XCTestCase {
 
     func test_1_SaveSecuredObjectSuccess() {
         // Arrange
-        let data: [ModelBuilderTest] = [ModelBuilderTest(name: "PromoFarma"), ModelBuilderTest(name: "Marvel")]
+        let data: [ModelBuilderTest] = [ModelBuilderTest(name: "ElectroMaps"), ModelBuilderTest(name: "Marvel")]
         // Act
         store.save(object: data, by: "testSaveObjectSuccess", isSecured: true)
         if let storedData: [ModelBuilderTest] = store.get(by: "testSaveObjectSuccess", isSecured: true) {
@@ -51,7 +51,7 @@ class StorageManagerTests: XCTestCase {
 
     func test_3_DeleteSecuredObject() {
         // Arrange
-        let data: [ModelBuilderTest] = [ModelBuilderTest(name: "PromoFarma"), ModelBuilderTest(name: "Marvel")]
+        let data: [ModelBuilderTest] = [ModelBuilderTest(name: "ElectroMaps"), ModelBuilderTest(name: "Marvel")]
         defer {
             // Act
             store.delete(by: "testSaveObjectSuccess")
@@ -63,7 +63,7 @@ class StorageManagerTests: XCTestCase {
     }
 
     func test_4_DeleteSecuredAllObjects() {
-        let data: [ModelBuilderTest] = [ModelBuilderTest(name: "PromoFarma"), ModelBuilderTest(name: "Marvel")]
+        let data: [ModelBuilderTest] = [ModelBuilderTest(name: "ElectroMaps"), ModelBuilderTest(name: "Marvel")]
         defer {
             // Act
             store.deleteAll()
@@ -77,7 +77,7 @@ class StorageManagerTests: XCTestCase {
     // MARK: Non secured
 
     func test_5_SaveNonSecuredObjectSuccess() {
-        let data: [ModelBuilderTest] = [ModelBuilderTest(name: "PromoFarma"), ModelBuilderTest(name: "Marvel")]
+        let data: [ModelBuilderTest] = [ModelBuilderTest(name: "ElectroMaps"), ModelBuilderTest(name: "Marvel")]
         // Act
         store.save(object: data, by: "testSaveObjectSuccess", isSecured: false)
         if let storedData: [ModelBuilderTest] = store.get(by: "testSaveObjectSuccess", isSecured: false) {
@@ -97,7 +97,7 @@ class StorageManagerTests: XCTestCase {
     }
 
     func test_7_DeleteNonSecuredObject() {
-        let data: [ModelBuilderTest] = [ModelBuilderTest(name: "PromoFarma"), ModelBuilderTest(name: "Marvel")]
+        let data: [ModelBuilderTest] = [ModelBuilderTest(name: "ElectroMaps"), ModelBuilderTest(name: "Marvel")]
         defer {
             store.delete(by: "testSaveObjectSuccess")
             // Act
@@ -109,7 +109,7 @@ class StorageManagerTests: XCTestCase {
     }
 
     func test_8_DeleteNonSecuredAllObjects() {
-        let data: [ModelBuilderTest] = [ModelBuilderTest(name: "PromoFarma"), ModelBuilderTest(name: "Marvel")]
+        let data: [ModelBuilderTest] = [ModelBuilderTest(name: "ElectroMaps"), ModelBuilderTest(name: "Marvel")]
         defer {
             // Arrange
             store.deleteAll()

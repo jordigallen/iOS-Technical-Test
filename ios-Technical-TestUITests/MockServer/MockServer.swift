@@ -19,7 +19,7 @@ public enum HttpMethod {
 
 final class MockServer {
     enum Constant {
-        static let bundleIdentifier = Bundle(for: MockServer.self).bundleIdentifier ?? "com.promofarma.ios-Technical-Test.jordi.ios-Technical-TestUITests"
+        static let bundleIdentifier = Bundle(for: MockServer.self).bundleIdentifier ?? "com.electromaps.ios-Technical-Test.jordi.ios-Technical-TestUITests"
     }
 
     private var server = HttpServer()
