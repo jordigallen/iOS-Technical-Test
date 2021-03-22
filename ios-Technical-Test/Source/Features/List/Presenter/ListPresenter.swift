@@ -9,12 +9,12 @@ import Foundation
 
 protocol ListPresenterProtocol: AnyObject {
     func fetchTVShows()
-    func attachView(_ view: UserView)
+    func attachView(_ view: UserViewProtocol)
     func detachView()
     var newPage: Int { get }
 }
 
-protocol UserView: AnyObject {
+protocol UserViewProtocol: AnyObject {
     func startLoading()
     func finishLoading()
     func setTVShows(_ tvShows: [TVShowModel])
@@ -31,13 +31,13 @@ class ListPresenter: ListPresenterProtocol {
     var newPage = 0
 
     private var useCase: ListUseCaseProtocol?
-    private weak var userView: UserView?
+    private weak var userView: UserViewProtocol?
 
     init(useCase: ListUseCaseProtocol) {
         self.useCase = useCase
     }
 
-    internal func attachView(_ view: UserView){
+    internal func attachView(_ view: UserViewProtocol){
         userView = view
     }
 

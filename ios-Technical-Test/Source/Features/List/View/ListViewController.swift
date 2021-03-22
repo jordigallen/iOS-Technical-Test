@@ -68,7 +68,7 @@ extension ListViewController: UITableViewDelegate {
     }
 }
 
-extension ListViewController: UserView {
+extension ListViewController: UserViewProtocol {
     func startLoading() {
         self.activityIndicator?.startAnimating()
     }
@@ -80,7 +80,6 @@ extension ListViewController: UserView {
     func setTVShows(_ tvShows: [TVShowModel]) {
         self.tvShows = tvShows
         self.tvShows.append(contentsOf: tvShows)
-        self.tableView?.reloadData()
         self.tableViewOnBottom = false
     }
 
@@ -97,14 +96,14 @@ extension ListViewController: UserView {
     }
 }
 
-extension ListViewController {
-    private func prepareTableView() {
+private extension ListViewController {
+    func prepareTableView() {
         self.presenter.fetchTVShows()
         self.toggleTableViewBackground()
         self.tableView.register(UINib.init(nibName: ListViewController.cellTableId, bundle: nil), forCellReuseIdentifier: ListViewController.cellTableId)
     }
 
-    private func createEmptyView( _ image: UIImage, and title: String) -> BaseEmptyView? {
+    func createEmptyView( _ image: UIImage, and title: String) -> BaseEmptyView? {
         let baseEmptyView: BaseEmptyView? = BaseEmptyView.loadFromNib()
         baseEmptyView?.configure(withImage: image, caption: title, attributedCaption: nil)
         return baseEmptyView

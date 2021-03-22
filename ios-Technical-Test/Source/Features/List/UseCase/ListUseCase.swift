@@ -19,12 +19,8 @@ class ListUseCase: ListUseCaseProtocol {
     }
 
     func fetchTVShows(_ page: Int,  completion: @escaping (Result<[TVShowModel], BaseError>) -> Void) {
-        DispatchQueue.global(qos: .background).async {
             self.repository?.fetchTVShows(page) { result in
-                DispatchQueue.main.async {
                     completion(result)
-                }
             }
-        }
     }
 }
