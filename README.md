@@ -138,7 +138,7 @@ Once the requirements were sketched in mind, I described the specifications for 
 
 These requirements lead to the implementation and final design that we show in the following GIF:
 
-<img src="ElectroMapsTour.gif" width="300">
+<img src="PromofarmaTour.gif" width="300">
 
 ### iOS 14 and dark mode
 
@@ -146,7 +146,7 @@ I have implemented the app with iOS 14.0 or higher. The reasoning behind this is
 
 As a consequence, it should be mentioned that the application supports dark mode. Feel free to give it a try [by activating dark mode in the simulator!](Https://technikales.com/how-to-turn-on-dark-mode-in-ios-14-simulator/)
 
-<img src="ElectroMapsTourDarkMode.gif" width="300">
+<img src="PromofarmaTourDarkMode.gif" width="300">
 
 
 ## Tests
