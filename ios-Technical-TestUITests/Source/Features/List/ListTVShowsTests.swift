@@ -44,4 +44,6 @@ class ListTVShowsTests: BaseUITestCase {
         app.launch()
         XCUIApplication().tables.children(matching: .cell).element(boundBy: 1).staticTexts["Person of Interest"].swipeUp()
     }
+
+    
 }
