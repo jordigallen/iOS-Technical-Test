@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.com/jordigallen/ios-Technical-Test.svg?branch=develop)](https://www.travis-ci.com/github/jordigallen/ios-Technical-Test)
 [![OS Version: iOS 14.2](https://img.shields.io/badge/iOS-14.2-green.svg)](https://www.apple.com/es/ios/ios-14/)
 [![License](https://img.shields.io/cocoapods/l/Swinject.svg?style=flat)](http://cocoapods.org/pods/Swinject)
-[![Swift Version](https://img.shields.io/badge/Swift-5.1.svg?style=flat)](https://developer.apple.com/swift)
+[![Swift Version](https://img.shields.io/badge//Swift-5.1.x-F16D39.svg?style=flat)](https://developer.apple.com/swift)
 
 In this manuscript he explains how everything has been implemented, along with some additional tools and what the Challenge App for ElectroMaps offers us.
 
