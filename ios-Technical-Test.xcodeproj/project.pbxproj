@@ -64,6 +64,7 @@
 		146CEA9B256088BF005802FA /* SwinjectStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CEA9A256088BF005802FA /* SwinjectStoryboardExtension.swift */; };
 		146CEAA325608902005802FA /* SwinjectAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CEAA225608902005802FA /* SwinjectAssembler.swift */; };
 		146CEAA92560892A005802FA /* CommonAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CEAA82560892A005802FA /* CommonAssembly.swift */; };
+		14736061260A712F008FF265 /* RemoteConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14736060260A712F008FF265 /* RemoteConfigurationTests.swift */; };
 		148572312562662A00609D4E /* ListTVShowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148572302562662A00609D4E /* ListTVShowsTests.swift */; };
 		14857237256267D400609D4E /* CommonFeaturesUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14857236256267D400609D4E /* CommonFeaturesUITest.swift */; };
 		14AB9D5B25603EF4009F3A51 /* Gothamrnd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 14AB9D5725603EF4009F3A51 /* Gothamrnd-Medium.otf */; };
@@ -164,6 +165,7 @@
 		146CEA9A256088BF005802FA /* SwinjectStoryboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardExtension.swift; sourceTree = "<group>"; };
 		146CEAA225608902005802FA /* SwinjectAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectAssembler.swift; sourceTree = "<group>"; };
 		146CEAA82560892A005802FA /* CommonAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAssembly.swift; sourceTree = "<group>"; };
+		14736060260A712F008FF265 /* RemoteConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigurationTests.swift; sourceTree = "<group>"; };
 		1485722F2562662A00609D4E /* ios-Technical-TestUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-Technical-TestUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		148572302562662A00609D4E /* ListTVShowsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVShowsTests.swift; sourceTree = "<group>"; };
 		14857236256267D400609D4E /* CommonFeaturesUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFeaturesUITest.swift; sourceTree = "<group>"; };
@@ -238,11 +240,13 @@
 		14013C1A256114A70047F140 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				CE093A1826089B8E0096CA43 /* AuthType */,
 				14013C45256117DA0047F140 /* Auth */,
+				CE093A1826089B8E0096CA43 /* AuthType */,
 				CE093A212608A1C40096CA43 /* BaseError */,
-				146CB90125617248006BD6EC /* Storage */,
 				146CB8F6256154F5006BD6EC /* Extension */,
+				1473605F260A7117008FF265 /* Remote */,
+				149B6C92260A6280004625C3 /* Router */,
+				146CB90125617248006BD6EC /* Storage */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -742,6 +746,14 @@
 			path = Endpoints;
 			sourceTree = "<group>";
 		};
+		1473605F260A7117008FF265 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				14736060260A712F008FF265 /* RemoteConfigurationTests.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
 		14857229256265DC00609D4E /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -777,6 +789,13 @@
 				14857236256267D400609D4E /* CommonFeaturesUITest.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		149B6C92260A6280004625C3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		14D373A4255D9592006DAA65 = {
@@ -1237,6 +1256,7 @@
 				CE093A1A26089BAC0096CA43 /* AuthTypeTests.swift in Sources */,
 				146CB890256147A8006BD6EC /* TVShow+Mock.swift in Sources */,
 				146CB92725617A97006BD6EC /* ListUseCaseTests.swift in Sources */,
+				14736061260A712F008FF265 /* RemoteConfigurationTests.swift in Sources */,
 				146CB8F92561550A006BD6EC /* Codable+ExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,6 +16,7 @@ $swiftgen_version = '6.1.0'
 $snapshotTesting_version = '1.8.2'
 $swinject_version = '2.6.0'
 $swinjectStoryboard_version = '2.2.0'
+$swifter_version = '1.5.0'
 
 def app_pods
   pod 'Alamofire', $alamofire_version
@@ -42,7 +43,7 @@ end
 target 'ios-Technical-TestUITests' do
   inherit! :search_paths
   app_pods
-  pod 'Swifter'
+  pod 'Swifter', $swifter_version
 end
 
 post_install do |installer|

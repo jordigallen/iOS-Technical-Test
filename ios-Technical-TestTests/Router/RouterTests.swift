@@ -26,5 +26,18 @@ class RouterTests: XCTestCase {
         // Assert
         expect(viewController).to(beAnInstanceOf(ListViewController.self))
     }
-}
 
+    func test_GetDetail() {
+        // Arrange
+        let viewController = Router.getDetailViewController(UIImageView(image: Asset.placeholderTVShowIcon.image), title: nil, gender: nil, sinopsis: nil, puntuation: nil)
+        // Assert
+        expect(viewController).to(beAnInstanceOf(UINavigationController.self))
+    }
+
+    func test_checkInstanceStorageInRouterTests() {
+        // Arrange
+        let storage = Router()
+        // Act & Assert
+        expect(storage).notTo(beNil())
+    }
+}

@@ -9,7 +9,7 @@ import Nimble
 import XCTest
 @testable import ios_Technical_Test
 
-class CoreLogTests: XCTestCase {
+final class CoreLogTests: XCTestCase {
     private enum ErrorConstans: Int {
         case server = 503
         case notFound = 404
@@ -37,6 +37,21 @@ class CoreLogTests: XCTestCase {
 
     func testCoreLog_Process_Error() {
         let error: () = ErrorManager.process(error: errorMock)
+        expect(error).notTo(beNil())
+    }
+
+    func testCoreLog_Process_Debug() {
+        let error: () = CoreLog().debug("", "")
+        expect(error).notTo(beNil())
+    }
+
+    func testCoreLog_Process_fault() {
+        let error: () = CoreLog().fault("", "")
+        expect(error).notTo(beNil())
+    }
+
+    func testCoreLog_Process_Info() {
+        let error: () = CoreLog().info("", "")
         expect(error).notTo(beNil())
     }
 }
