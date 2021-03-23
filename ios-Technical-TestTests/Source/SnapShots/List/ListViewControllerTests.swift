@@ -3,7 +3,7 @@
 //  ios-Technical-TestTests
 //
 //  Created by JORDI GALLEN RENAU on 15/11/20.
-//
+// 
 
 import SnapshotTesting
 import XCTest
@@ -25,7 +25,6 @@ class ListViewControllerTests: XCTestCase {
     }
 
     func testListTVShows_Success() {
-
         // Arrange & Act
         view.presenter.fetchTVShows()
         // Assert

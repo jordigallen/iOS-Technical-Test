@@ -26,9 +26,7 @@
 		146CB88B25614778006BD6EC /* MockRemoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CB88A25614778006BD6EC /* MockRemoteManager.swift */; };
 		146CB890256147A8006BD6EC /* TVShow+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CB88F256147A8006BD6EC /* TVShow+Mock.swift */; };
 		146CB8A72561494F006BD6EC /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CB8A62561494F006BD6EC /* RouterTests.swift */; };
-		146CB8B525614AE2006BD6EC /* ListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CB8B425614AE2006BD6EC /* ListViewControllerTests.swift */; };
 		146CB8BC25614C92006BD6EC /* TVShowResultCollectionCelTVShowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CB8BB25614C92006BD6EC /* TVShowResultCollectionCelTVShowTests.swift */; };
-		146CB8C525614D8F006BD6EC /* TVShowEmptyViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CB8C425614D8F006BD6EC /* TVShowEmptyViewTests.swift */; };
 		146CB8D225614E62006BD6EC /* BaseEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 146CB8D125614E62006BD6EC /* BaseEmptyView.xib */; };
 		146CB8E12561516F006BD6EC /* BaseEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CB8D92561508C006BD6EC /* BaseEmptyView.swift */; };
 		146CB8F92561550A006BD6EC /* Codable+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CB8F72561550A006BD6EC /* Codable+ExtensionTests.swift */; };
@@ -81,6 +79,11 @@
 		14D373C8255D9593006DAA65 /* Swinject+ListtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D373C7255D9593006DAA65 /* Swinject+ListtTests.swift */; };
 		14D6D721256524C000C66748 /* BaseUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6D720256524C000C66748 /* BaseUITestCase.swift */; };
 		B9EE7F1DF0134BB76024B7E9 /* Pods_ios_Technical_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3759C9A56D5C2478D8C8BE /* Pods_ios_Technical_TestUITests.framework */; };
+		CE093A0026088EEC0096CA43 /* TVShowEmptyViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CB8C425614D8F006BD6EC /* TVShowEmptyViewTests.swift */; };
+		CE093A0726088EFD0096CA43 /* ListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146CB8B425614AE2006BD6EC /* ListViewControllerTests.swift */; };
+		CE093A11260894420096CA43 /* CoreLog+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE093A10260894420096CA43 /* CoreLog+Tests.swift */; };
+		CE093A1A26089BAC0096CA43 /* AuthTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE093A1926089BAC0096CA43 /* AuthTypeTests.swift */; };
+		CE093A232608A1DC0096CA43 /* BaseErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE093A222608A1DC0096CA43 /* BaseErrorTests.swift */; };
 		E89494AB4CB7B548988913CA /* Pods_ios_Technical_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F03FD0522793B816EA6853B /* Pods_ios_Technical_TestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -189,6 +192,9 @@
 		894C78A88F70725BFC16827D /* Pods-ios-Technical-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-Technical-TestTests.debug.xcconfig"; path = "Target Support Files/Pods-ios-Technical-TestTests/Pods-ios-Technical-TestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F21335818597F7762C18028 /* Pods_ios_Technical_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_Technical_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F35EC4F6AB57764FE9C38B6 /* Pods-ios-Technical-TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-Technical-TestTests.release.xcconfig"; path = "Target Support Files/Pods-ios-Technical-TestTests/Pods-ios-Technical-TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE093A10260894420096CA43 /* CoreLog+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreLog+Tests.swift"; sourceTree = "<group>"; };
+		CE093A1926089BAC0096CA43 /* AuthTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTypeTests.swift; sourceTree = "<group>"; };
+		CE093A222608A1DC0096CA43 /* BaseErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseErrorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,9 +238,11 @@
 		14013C1A256114A70047F140 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CE093A1826089B8E0096CA43 /* AuthType */,
+				14013C45256117DA0047F140 /* Auth */,
+				CE093A212608A1C40096CA43 /* BaseError */,
 				146CB90125617248006BD6EC /* Storage */,
 				146CB8F6256154F5006BD6EC /* Extension */,
-				14013C45256117DA0047F140 /* Auth */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -811,6 +819,7 @@
 				1412667D25651B5500F7CFAF /* Mocks */,
 				146CB8A52561490A006BD6EC /* Router */,
 				14013C19256114980047F140 /* Source */,
+				CE093A0E260893BD0096CA43 /* Utils */,
 			);
 			path = "ios-Technical-TestTests";
 			sourceTree = "<group>";
@@ -836,6 +845,38 @@
 				5A5B4A875D60B658E96398B3 /* Pods-ios-Technical-TestUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE093A0E260893BD0096CA43 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CE093A0F260893E90096CA43 /* CoreLog */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CE093A0F260893E90096CA43 /* CoreLog */ = {
+			isa = PBXGroup;
+			children = (
+				CE093A10260894420096CA43 /* CoreLog+Tests.swift */,
+			);
+			path = CoreLog;
+			sourceTree = "<group>";
+		};
+		CE093A1826089B8E0096CA43 /* AuthType */ = {
+			isa = PBXGroup;
+			children = (
+				CE093A1926089BAC0096CA43 /* AuthTypeTests.swift */,
+			);
+			path = AuthType;
+			sourceTree = "<group>";
+		};
+		CE093A212608A1C40096CA43 /* BaseError */ = {
+			isa = PBXGroup;
+			children = (
+				CE093A222608A1DC0096CA43 /* BaseErrorTests.swift */,
+			);
+			path = BaseError;
 			sourceTree = "<group>";
 		};
 		E0B9888E1CD69E6BABC50FCF /* Frameworks */ = {
@@ -1181,19 +1222,22 @@
 			files = (
 				146CB8FA2561550A006BD6EC /* CoreLog+ProfessionalsTests.swift in Sources */,
 				146CB88B25614778006BD6EC /* MockRemoteManager.swift in Sources */,
-				146CB8C525614D8F006BD6EC /* TVShowEmptyViewTests.swift in Sources */,
 				14D373C8255D9593006DAA65 /* Swinject+ListtTests.swift in Sources */,
+				CE093A0726088EFD0096CA43 /* ListViewControllerTests.swift in Sources */,
 				146CB8832561475F006BD6EC /* MockStorageManager.swift in Sources */,
 				146CB92F25617AB1006BD6EC /* ListPresenterTests.swift in Sources */,
 				146CB8A72561494F006BD6EC /* RouterTests.swift in Sources */,
+				CE093A11260894420096CA43 /* CoreLog+Tests.swift in Sources */,
 				14013C4725611BE90047F140 /* AuthManagerTest.swift in Sources */,
 				146CB8BC25614C92006BD6EC /* TVShowResultCollectionCelTVShowTests.swift in Sources */,
 				146CB903256172E7006BD6EC /* StorageManagerTests.swift in Sources */,
+				CE093A0026088EEC0096CA43 /* TVShowEmptyViewTests.swift in Sources */,
 				146CB93725617D15006BD6EC /* TVShowModelTest.swift in Sources */,
+				CE093A232608A1DC0096CA43 /* BaseErrorTests.swift in Sources */,
+				CE093A1A26089BAC0096CA43 /* AuthTypeTests.swift in Sources */,
 				146CB890256147A8006BD6EC /* TVShow+Mock.swift in Sources */,
 				146CB92725617A97006BD6EC /* ListUseCaseTests.swift in Sources */,
 				146CB8F92561550A006BD6EC /* Codable+ExtensionTests.swift in Sources */,
-				146CB8B525614AE2006BD6EC /* ListViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1389,7 +1433,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.promofarma.ios-Technical-Test.jordi.ios-Technical-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.electromaps.ios-Technical-Test.jordi.ios-Technical-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -1412,7 +1456,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.promofarma.ios-Technical-Test.jordi.ios-Technical-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.electromaps.ios-Technical-Test.jordi.ios-Technical-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -1435,7 +1479,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.promofarma.ios-Technical-Test.jordi.ios-Technical-TestTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.electromaps.ios-Technical-Test.jordi.ios-Technical-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1458,7 +1502,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.promofarma.ios-Technical-Test.jordi.ios-Technical-TestTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.electromaps.ios-Technical-Test.jordi.ios-Technical-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1480,7 +1524,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.promofarma.ios-Technical-Test.jordi.ios-Technical-TestUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.electromaps.ios-Technical-Test.jordi.ios-Technical-TestUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ios-Technical-TestUITests/Source/Features/List/ios-Technical-TestUITests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1504,7 +1548,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.promofarma.ios-Technical-Test.jordi.ios-Technical-TestUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.electromaps.ios-Technical-Test.jordi.ios-Technical-TestUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ios-Technical-TestUITests/Source/Features/List/ios-Technical-TestUITests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

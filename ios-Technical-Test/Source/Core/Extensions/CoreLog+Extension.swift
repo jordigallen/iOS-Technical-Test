@@ -8,8 +8,8 @@
 import Foundation
 
 extension CoreLog {
-    public static let business = CoreLog(identifier: "com.promofarma.iosTechnicalTest", category: "business")
-    public static let ui = CoreLog(identifier: "com.promofarma.iosTechnicalTest", category: "ui")
-    public static let firebase = CoreLog(identifier: "com.promofarma.iosTechnicalTest", category: "firebase")
-    public static let remote = CoreLog(identifier: "com.promofarma.iosTechnicalTest", category: "remote")
+    public static let business = CoreLog(identifier: "com.electroMaps.iosTechnicalTest", category: "business")
+    public static let ui = CoreLog(identifier: "com.electroMaps.iosTechnicalTest", category: "ui")
+    public static let firebase = CoreLog(identifier: "com.electroMaps.iosTechnicalTest", category: "firebase")
+    public static let remote = CoreLog(identifier: "com.electroMaps.iosTechnicalTest", category: "remote")
 }

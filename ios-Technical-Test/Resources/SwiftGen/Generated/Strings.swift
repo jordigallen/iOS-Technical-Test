@@ -22,7 +22,7 @@ internal enum L10n {
   internal enum IosTechnicalTest {
     internal enum ListViewController {
       internal enum Navigation {
-        /// PromoFarma
+        /// ElectroMaps
         internal static let title = L10n.tr("Localizable", "ios-Technical-Test.ListViewController.navigation.title")
       }
       internal enum Searching {

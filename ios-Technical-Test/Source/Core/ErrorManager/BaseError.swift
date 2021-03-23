@@ -10,7 +10,6 @@ import Foundation
 public enum BaseError: Error {
     case repositoryError(RepositoryError)
     case remoteError(RemoteError)
-    case socketError(SocketError)
     case authError(AuthError)
     case ui(UIError)
 
@@ -62,25 +61,6 @@ public enum BaseError: Error {
         }
     }
 
-    public enum SocketError: Equatable {
-        case ackNotFound
-        case socketIsDisconnect
-        case wrongDataResponse(String)
-        case reason(String)
-        case sendMessageWrongFormat
-
-        var description: String {
-            switch self {
-            case let .reason(reason):
-                return "Reason: \(reason)"
-            case let .wrongDataResponse(details):
-                return "WrongDataResponse: \(details)"
-            default:
-                return String(describing: self).capitalizingFirstLetter()
-            }
-        }
-    }
-
     public enum UIError {
         case cantLoad
         case notResponds
@@ -105,8 +85,6 @@ public enum BaseError: Error {
             return "RemoteError - " + error.description
         case let .authError(error):
             return "AuthError - " + error.description
-        case let .socketError(error):
-            return "SocketError - " + error.description
         case let .ui(error):
             return "UIError - " + error.description
         }

@@ -27,7 +27,6 @@ class TVShowEmptyViewTests: XCTestCase {
     func testViewLoadsSuccessfully_withHeroModel() {
         // Act
         view.configure(withImage: Asset.noTVShowsFoundedIcon.image, caption: L10n.IosTechnicalTest.ListViewController.Searching.title, attributedCaption: nil)
-
         // Assert
         assertSnapshot(matching: view, as: .image)
     }
@@ -35,7 +34,6 @@ class TVShowEmptyViewTests: XCTestCase {
     func testViewLoadsSuccessfully_noResultFound() {
         // Act
         view.configure(withImage: Asset.noTVShowsFoundedIcon.image, caption: L10n.IosTechnicalTest.ListViewController.Searching.resulNotFound, attributedCaption: nil)
-
         // Assert
         assertSnapshot(matching: view, as: .image)
     }

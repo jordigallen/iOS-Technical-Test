@@ -3,6 +3,6 @@
 "Shared.empty" = "";
 
 // MARK: List
-"ios-Technical-Test.ListViewController.navigation.title" = " in PromoFarma";
+"ios-Technical-Test.ListViewController.navigation.title" = " in ElectroMaps";
 "ios-Technical-Test.ListViewController.searching.title" = "We are downloading the list\n\nAre you ready to freak?";
 "ios-Technical-Test.ListViewController.searching.resulNotFound" = "You haven't found what you were looking for, man!\n\nBad luck!";
