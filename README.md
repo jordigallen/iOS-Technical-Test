@@ -4,6 +4,8 @@
 
 In this manuscript he explains how everything has been implemented, along with some additional tools and what the Challenge App for ElectroMaps offers us.
 
+With a test percentage greater than: 75%
+
 ## Table of contents
 
 - [ios-Technical-Test](#ios-Technical-Test)
