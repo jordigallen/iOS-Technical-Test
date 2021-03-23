@@ -15,12 +15,14 @@ class ListHeroesPresenterTests: XCTestCase {
     private let presenter = Assembler.shared.resolver.resolve(ListPresenterProtocol.self)
 
     func testPresenterNotNil() {
+        // Act & Assert
         expect(self.presenter).toNot(beNil())
     }
 
     func testHasTVShows_Success() {
         waitUntil(timeout: TestConstants.WaitTime.medium.rawValue) { (done) in
-            self.presenter?.fetchTVShows()
+            // Act & Assert
+            expect(self.presenter?.fetchTVShows()).toNot(beNil())
             done()
         }
     }

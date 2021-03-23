@@ -2,7 +2,7 @@
 
 [![OS Version: iOS 14.2](https://img.shields.io/badge/iOS-14.2-green.svg)](https://www.apple.com/es/ios/ios-14/)
 
-In this manuscript he explains how everything has been implemented, along with some additional tools and what the Challenge App for PromoFarma offers us.
+In this manuscript he explains how everything has been implemented, along with some additional tools and what the Challenge App for ElectroMaps offers us.
 
 ## Table of contents
 
@@ -138,7 +138,7 @@ Once the requirements were sketched in mind, I described the specifications for 
 
 These requirements lead to the implementation and final design that we show in the following GIF:
 
-<img src="PromoFarmaTour.gif" width="300">
+<img src="ElectroMapsTour.gif" width="300">
 
 ### iOS 14 and dark mode
 
@@ -146,7 +146,7 @@ I have implemented the app with iOS 14.0 or higher. The reasoning behind this is
 
 As a consequence, it should be mentioned that the application supports dark mode. Feel free to give it a try [by activating dark mode in the simulator!](Https://technikales.com/how-to-turn-on-dark-mode-in-ios-14-simulator/)
 
-<img src="PromoFarmaTourDarkMode.gif" width="300">
+<img src="ElectroMapsTourDarkMode.gif" width="300">
 
 
 ## Tests
