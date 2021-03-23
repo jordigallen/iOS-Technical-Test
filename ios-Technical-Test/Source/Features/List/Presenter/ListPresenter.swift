@@ -10,7 +10,6 @@ import Foundation
 protocol ListPresenterProtocol: AnyObject {
     func fetchTVShows()
     func attachView(_ view: UserViewProtocol)
-    func detachView()
     var newPage: Int { get }
 }
 
@@ -40,11 +39,6 @@ class ListPresenter: ListPresenterProtocol {
     internal func attachView(_ view: UserViewProtocol){
         userView = view
     }
-
-    internal func detachView() {
-        userView = nil
-    }
-
 
     internal func fetchTVShows() {
         self.userView?.startLoading()

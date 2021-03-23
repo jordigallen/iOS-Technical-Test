@@ -26,7 +26,7 @@ DEPENDENCIES:
   - PromiseKit (= 6.12.0)
   - SDWebImage (= 5.3.1)
   - SnapshotTesting (= 1.8.2)
-  - Swifter
+  - Swifter (= 1.5.0)
   - SwiftGen (= 6.1.0)
   - Swinject (= 2.6.0)
   - SwinjectStoryboard (= 2.2.0)
@@ -54,6 +54,6 @@ SPEC CHECKSUMS:
   Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
   SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
 
-PODFILE CHECKSUM: 8d9e1f0326a94810e8d48951bcedc99b1a66525c
+PODFILE CHECKSUM: 2488cee3880b431b650a9b4b9bbd6e3d6a0159fe
 
 COCOAPODS: 1.10.1
