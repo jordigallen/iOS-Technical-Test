@@ -157,6 +157,9 @@ As a consequence, it should be mentioned that the application supports dark mode
 
 ## Tests
 
+All the tests in the app are built under the triple A pattern, better known as 3A or AAA. The AAA (Arrange-Act-Assert) pattern has become almost a standard across the industry. It suggests that you should divide your test method into three sections: arrange, act and assert. Each one of them only responsible for the part in which they are named after.
+App code should respect most, if not all, rules of production code. It should avoid meaningless magic numbers, should avoid violating principles like DRY, YAGNI, SRP and KISS.
+
 I have implemented unit tests at the business logic level, as well as views in ScreenShots and UITest at the application flow level, all with the intention of reaching 100% coverage.
 
 In the repository itself you can see the percentage of coverage that the project has, as well as whether all the tests are passing or not.
