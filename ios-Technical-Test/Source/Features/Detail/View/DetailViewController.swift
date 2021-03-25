@@ -48,7 +48,7 @@ public class DetailListViewController: UIViewController {
 
     @IBOutlet weak var summaryUITextView: UITextView! {
         didSet {
-            let data = Data(sinopsisDetail!.utf8)
+            let data = Data(sinopsisDetail?.utf8 ?? "".utf8)
             if let attributedString = try? NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil) {
                 self.summaryUITextView.attributedText = attributedString
             }

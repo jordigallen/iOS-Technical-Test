@@ -12,22 +12,18 @@ import XCTest
 // Pattern AAA (Arrange, Act, Assert)
 
 class ListViewControllerTests: XCTestCase {
-
-    var view: ListViewController =  Router.getListViewController()!
-
-    override func setUp() {
-        super.setUp()
-        view =  Router.getListViewController()!
-    }
-
-    override func tearDown() {
-        super.tearDown()
-    }
-
     func testListTVShows_Success() {
         // Arrange & Act
-        view.presenter.fetchTVShows()
+        let listView: ListViewController =  Router.getListViewController()!
+        listView.presenter.fetchTVShows()
         // Assert
-        assertSnapshot(matching: self.view, as: .image)
+        assertSnapshot(matching: listView, as: .image)
+    }
+
+    func testListDetailTVShows_Success() {
+        // Arrange & Act
+        let listDetailView: UINavigationController =  Router.getDetailViewController(nil, title: nil, gender: nil, sinopsis: nil, puntuation: 10.0)!
+        // Assert
+        assertSnapshot(matching: listDetailView, as: .image)
     }
 }
