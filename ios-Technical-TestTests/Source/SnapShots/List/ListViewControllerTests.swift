@@ -19,11 +19,4 @@ class ListViewControllerTests: XCTestCase {
         // Assert
         assertSnapshot(matching: listView, as: .image)
     }
-
-    func testListDetailTVShows_Success() {
-        // Arrange & Act
-        let listDetailView: UINavigationController =  Router.getDetailViewController(nil, title: nil, gender: nil, sinopsis: nil, puntuation: 10.0)!
-        // Assert
-        assertSnapshot(matching: listDetailView, as: .image)
-    }
 }
