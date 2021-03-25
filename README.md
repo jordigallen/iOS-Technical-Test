@@ -1,8 +1,7 @@
 # iOS - Technical Test
 
-[![Build Status](https://travis-ci.com/jordigallen/ios-Technical-Test.svg?branch=develop)](https://www.travis-ci.com/github/jordigallen/ios-Technical-Test)
-[![Coverage Status](https://coveralls.io/repos/github/jordigallen/ios-Technical-Test/badge.svg?branch=develop)](https://coveralls.io/github/jordigallen/ios-Technical-Test?branch=develop)
-[![OS Version: iOS 14.2](https://img.shields.io/badge/iOS-14.2-green.svg)](https://www.apple.com/es/ios/ios-14/)
+[![Build Status](https://travis-ci.org/jordigallen/ios-Technical-Test.svg?branch=develop)](https://travis-ci.org/jordigallen/ios-Technical-Test)
+[![Coverage Status](https://coveralls.io/repos/github/jordigallen/ios-Technical-Test/badge.svg?branch=develop)](https://coveralls.io/github/jordigallen/ios-Technical-Test?branch=develop)[![OS Version: iOS 14.2](https://img.shields.io/badge/iOS-14.2-green.svg)](https://www.apple.com/es/ios/ios-14/)
 [![License](https://img.shields.io/cocoapods/l/Swinject.svg?style=flat)](http://cocoapods.org/pods/Swinject)
 [![Swift Version](https://img.shields.io/badge/Swift-5.x-F16D39.svg?style=flat)](https://developer.apple.com/swift)
 
